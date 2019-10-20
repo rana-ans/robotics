@@ -1,8 +1,8 @@
 <launch>
 
-  <arg name="model" default="$(find urdf_session)/urdf/assignment.urdf"/>
+  <arg name="model" default="$(find robotics)/urdf/assignment.urdf"/>
   <arg name="gui" default="true" />
-  <arg name="rvizconfig" default="$(find urdf_session)/rviz/urdf.rviz" />
+  <arg name="rvizconfig" default="$(find robotics)/rviz/urdf.rviz" />
 
   <param name="robot_description" command="$(find xacro)/xacro --inorder $(arg model)" />
   <param name="use_gui" value="$(arg gui)"/>
