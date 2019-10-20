@@ -1,6 +1,6 @@
 <launch>
 
-  <arg name="model" default="$(find robotics)/urdf/assignment.urdf"/>
+  <arg name="model" default="$(find robotics)/urdf/assignmentv1.urdf"/>
   <arg name="gui" default="true" />
   <arg name="rvizconfig" default="$(find robotics)/rviz/urdf.rviz" />
 
