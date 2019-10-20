@@ -1,0 +1,14 @@
+<launch>
+
+	<!-- Load the TortoiseBot URDF model into the parameter server -->
+	<param name="robot_description" textfile="$(find urdf_session)/urdf/assignment.urdf" />
+
+	<!-- Start Gazebo with an empty world -->
+	<include file="$(find gazebo_ros)/launch/shapes_world.launch"/>
+
+	<!-- Spawn a TortoiseBot in Gazebo, taking the description from the parameter server -->
+	<node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model"
+
+	args="-param robot_description -urdf -model assignment" />
+
+</launch>
