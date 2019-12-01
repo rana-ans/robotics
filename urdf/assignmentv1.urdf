@@ -5,11 +5,11 @@
 	<link name="base_link">
 		<visual>
 			<geometry>
-				<box size="0.6 0.3 0.08"/>
-			</geometry>
+        			<mesh filename="package://mcubot/meshes/base.stl" scale="1 1 1"/>
+      			</geometry>
 			<material name="green">
         		<color rgba="0 1 0 1"/>
-    		</material>
+    			</material>
 		</visual>
 		<collision>
 			<origin xyz="0 0 0" rpy="0 0 0"/>
